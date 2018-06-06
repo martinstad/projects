@@ -1,0 +1,117 @@
+ * {
+     box-sizing: border-box;
+}
+
+ html, 
+ body {
+     font-family: Arial, sans-serif;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     position: relative;
+}
+
+ input {
+     font-size: 12px;
+}
+
+ h1 {
+     color: #0B3B39;
+     font-size: 18px;
+     text-align: center;
+}
+
+ h2 {
+     color: #0B3B39;
+     font-size: 16px;
+     text-align: left;
+}
+
+ hr {
+     background: grey;
+     height: 1px;
+     margin: 20px 0 20px 0;
+     border: none;
+}
+
+ .input {
+     background-position: 10px 12px;
+     background-repeat: no-repeat;
+     width: 100%;
+     font-size: 12px;
+     padding: 12px 20px 12px 40px;
+     border: 1px solid #ddd;
+     margin-bottom: 12px;
+}
+
+ .container {
+     height: 100%;
+}
+
+ .restaurants {
+     width: 100%;
+     font-size: 12px;
+     margin: 5px 0px 0px 0px;
+     background-color: #f6f6f6;
+     text-align: center;
+}
+
+ .restaurants:hover {
+     background-color: grey;
+}
+
+ .options-box {
+     background: #D8D8D8;
+     height: 100%;
+     line-height: 30px;
+     padding: 10px 10px 10px 10px;
+     text-align: left;
+     width: 250px;
+}
+
+  .map-canvas {
+     bottom: 0px;
+     height: 100%;
+     left: 250px;
+     position: absolute;
+     width: 100%;
+     display: inline-block;
+}
+
+  .text {
+     font-size: 12px;
+}
+
+  .name {
+     font-weight: bold;
+     font-size: 14px;
+}
+
+ @media screen and (max-width: 400px) {
+    
+    .options-box {
+         background: #D8D8D8;
+         max-height: 300px;
+         line-height: 17px;
+         padding: 10px 10px 10px 10px;
+         text-align: left;
+         width: 100%;
+         display: block;
+    }
+
+    .map-canvas {
+         top: 300px;
+         height: 100%;
+         left: 0px;
+         bottom: 0px;
+         position: absolute;
+         width: 100%;
+         display: inline-block;
+    }
+
+     h1,
+     h2,
+     input {
+         font-size: 15px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="=width=device-width, initial-scale=1">
+      <meta name="author" content="Martin Stadelmann">
+      <meta name="description" content="This website gives an overview of the best restaurants in and around Zurich.">
+      <title>Where to eat in Zurich</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="options-box">
+            <h1>Restaurants in Zurich</h1>
+            <input type="text" class="input" placeholder="Search for Restaurant" data-bind="textInput: filter">
+            <div class="list-of-restaurants" data-bind="foreach: allRestaurants">
+               <p class="restaurants" data-bind="text: title, click: $parent.listRestaurant,  visible: show"></p>
+            </div>
+         </div>
+      </div>
+      <div id="map" class="map-canvas">Either you have a slow internet connection or an error occured while loading your map. Please check your internet connection and refresh the page.</div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/knockout-3.4.2.js"></script>
+      <script src="js/mapstyles.js"></script>
+      <script src="js/data.js"></script> 
+      <script src="js/main.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyA9uiT29TNuYe1N7U0cHnmUQ89gTXrDD28&callback=initMap"></script>
+   </body>
+</html>
