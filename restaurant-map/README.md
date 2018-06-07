@@ -11,7 +11,7 @@
 ## Used APIs
 
 * Google Maps API
-* Openweathermap API
+* Foursquare API
 
 ## Used Frameworks
 
