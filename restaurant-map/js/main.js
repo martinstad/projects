@@ -169,6 +169,7 @@ function initMap() {
             error: function() {
                 foursqaureContent =
                     "<div class='name'>Data cannot be displayed.</div>";
+                infoWindow.setContent(foursqaureContent);
             },
     });
         }
